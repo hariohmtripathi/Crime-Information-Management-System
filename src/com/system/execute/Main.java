@@ -2,11 +2,21 @@ package com.system.execute;
 
 import java.util.Scanner;
 
+import com.system.usecases.AreaWiseCrimeUseCases;
+import com.system.usecases.ChangeStatusUseCases;
+import com.system.usecases.CountCaseUseCases;
+import com.system.usecases.CurrentMonthCrimeUseCases;
 import com.system.usecases.RegisterCrimeUseCases;
+import com.system.usecases.RegisterCriminalUseCases;
+import com.system.usecases.SearchCrimeUseCases;
+import com.system.usecases.SearchCriminalUseCases;
+import com.system.usecases.ShowStatusUseCases;
 
 public class Main {
 	
 	public static void main(String[] args) {
+		
+		
 		
 		System.out.println("Welcome to crime management system\n");
 	
@@ -31,9 +41,47 @@ public class Main {
 			if(choice==1) {
 				RegisterCrimeUseCases rgs= new RegisterCrimeUseCases();
 				rgs.main(args);
+			
+			} else if(choice==2) {
+				RegisterCriminalUseCases rgcs= new RegisterCriminalUseCases();
+				rgcs.main(args);
+				
+			} else if(choice==3) {
+				ShowStatusUseCases st= new ShowStatusUseCases();
+				st.main(args);
 				
 				
+			} else if(choice==4) {
+				ChangeStatusUseCases cs= new ChangeStatusUseCases();
+				cs.main(args);
 				
+			} else if(choice==5) {
+				SearchCrimeUseCases search= new SearchCrimeUseCases();
+				search.main(args);
+				
+			} else if(choice==6) {
+				SearchCriminalUseCases searchCriminal= new SearchCriminalUseCases();
+				searchCriminal.main(args);
+				
+			} else if(choice==7) {
+				CountCaseUseCases count= new CountCaseUseCases();
+				count.main(args);
+				
+			} else if(choice==8) {
+				CurrentMonthCrimeUseCases cmc= new CurrentMonthCrimeUseCases();
+				cmc.main(args);
+				
+			} else if(choice==9) {
+				AreaWiseCrimeUseCases area = new AreaWiseCrimeUseCases();
+				area.main(args);
+				
+			} else if(choice==10) {
+				String op= sc.next();
+				
+				if(op.equalsIgnoreCase("yes")) {
+					System.out.println("Thank You");
+					break;
+				}
 			}
 		
 		}
