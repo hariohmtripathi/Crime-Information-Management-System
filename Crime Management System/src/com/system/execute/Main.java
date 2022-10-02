@@ -76,6 +76,7 @@ public class Main {
 				area.main(args);
 				
 			} else if(choice==10) {
+				System.out.println("Enter the option(Yes/No)");
 				String op= sc.next();
 				
 				if(op.equalsIgnoreCase("yes")) {
