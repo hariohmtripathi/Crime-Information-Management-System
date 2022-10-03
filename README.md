@@ -1,6 +1,6 @@
 Welcome To Crime Information Management System
 
-# Project Name - Crime Information Management System
+# Crime Information Management System
 
 This project is developed by Hari Ohm Tripathi
 
