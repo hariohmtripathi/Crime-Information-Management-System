@@ -10,10 +10,9 @@ Crime Information Management System is an application which interact with crime 
 It is consoled based application which give functionalities to user like register crime, register criminal, show status of crime case and get report on no of solved and not solved cases.
 This backend application is developed using JAVA and to get the data from database I used JDBC.
 
-## Tech Stacks
+### Tech Stacks
 * JAVA
 * JDBC
-
 
 
 
@@ -27,10 +26,12 @@ This backend application is developed using JAVA and to get the data from databa
 * Get report on status of case
 * Get all cases of crime of current month
 * Get report of crime cases area wise
-					 
-				
+
+
 ### Use cases of this application in real life :
 * This can be used by police:
  1. To get the Crime and Criminal data from the records.
  2. To register crime cases and criminals in records.
-
+ 
+ 
+### Video Link: 
